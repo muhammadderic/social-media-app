@@ -1,4 +1,5 @@
 import AddPost from "@/components/AddPost";
+import Feed from "@/components/feed/Feed";
 import Stories from "@/components/Stories";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <div className="flex flex-col gap-6">
           <Stories />
           <AddPost />
+          <Feed />
           {/* <p>Main</p> */}
         </div>
       </div>
