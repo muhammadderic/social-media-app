@@ -1,6 +1,7 @@
 import AddPost from "@/components/AddPost";
 import Feed from "@/components/feed/Feed";
 import LeftMenu from "@/components/leftMenu/LeftMenu";
+import RightMenu from "@/components/rightMenu/RightMenu";
 import Stories from "@/components/Stories";
 
 export default function Home() {
@@ -24,7 +25,8 @@ export default function Home() {
 
       {/* RIGHT */}
       <div className="hidden lg:block w-[30%]">
-        <p>Right</p>
+        <RightMenu />
+        {/* <p>Right</p> */}
       </div>
     </div>
   );
