@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import MobileMenu from "./MobileMenu"
 
 const Navbar = () => {
   return (
@@ -64,31 +65,35 @@ const Navbar = () => {
       </div>
 
       {/* RIGHT */}
-      <div className="w-[30%] flex items-center justify-end gap-4 xl:gap-8">
-        <div className="cursor-pointer">
-          <Image
-            src="/people.png"
-            alt=""
-            width={24}
-            height={24}
-          />
+      <div className="w-[30%] flex items-center justify-end">
+        <div className="hidden md:flex items-center gap-4 xl:gap-8">
+          <div className="cursor-pointer">
+            <Image
+              src="/people.png"
+              alt=""
+              width={24}
+              height={24}
+            />
+          </div>
+          <div className="cursor-pointer">
+            <Image
+              src="/messages.png"
+              alt=""
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="cursor-pointer">
+            <Image
+              src="/notifications.png"
+              alt=""
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
-        <div className="cursor-pointer">
-          <Image
-            src="/messages.png"
-            alt=""
-            width={20}
-            height={20}
-          />
-        </div>
-        <div className="cursor-pointer">
-          <Image
-            src="/notifications.png"
-            alt=""
-            width={20}
-            height={20}
-          />
-        </div>
+
+        <MobileMenu />
       </div>
     </div>
   )
