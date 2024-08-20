@@ -1,5 +1,6 @@
 import AddPost from "@/components/AddPost";
 import Feed from "@/components/feed/Feed";
+import LeftMenu from "@/components/leftMenu/LeftMenu";
 import Stories from "@/components/Stories";
 
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
     <div className="flex gap-6 pt-6">
       {/* LEFT */}
       <div className="hidden xl:block w-[20%]">
-        <p>Left</p>
+        <LeftMenu />
+        {/* <p>Left</p> */}
       </div>
 
       {/* MAIN */}
